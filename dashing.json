@@ -21,17 +21,29 @@
     ".container-overview dt h4": {
       "type": "Constructor"
     },
-    "dl dt h4[class!='name']": {
-      "requiretext": "(.+)\\:(.+)",
-      "type": "Property",
-      "regexp": "<(.*)>|:(.*)",
-      "replacement": ""
+    "article dl:nth-child(0) dt h4": {
+      "requiretext": "<(.*)constant(.*)> ([A-Z_]\\+) *\\: *(.+)",
+      "type": "Constant",
+      "attr": "data-name"
     },
-    "dl dt h4[class='name']": {
-      "requiretext": "(.+)\\((.*)\\)",
+    "article dl:nth-child(0) dt h4": {
+      "requiretext": "([a-zA-Z]+) *\\: *(.+)",
+      "type": "Property",
+      "attr": "data-name"
+    },
+    "article dl:nth-child(0) dt h4": {
+      "requiretext": "<readonly> ([A-Z_]\\+) *\\: *(.+)",
+      "type": "Property",
+      "attr": "data-name"
+    },
+    "article dl:nth-child(0) dt h4": {
+      "requiretext": "<protected> ([A-Z_]\\+) *\\: *(.+)",
+      "type": "Property",
+      "attr": "data-name"
+    },
+    "article dl:nth-child(1) dt h4[class='name']": {
       "type": "Method",
-      "regexp": "<(.*)>",
-      "replacement": ""
+      "attr": "data-name"
     }
   },
   "ignore": ["ABOUT"],
