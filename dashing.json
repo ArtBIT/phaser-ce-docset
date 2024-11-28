@@ -1,0 +1,41 @@
+{
+  "name": "Phaser-CE",
+  "package": "phaser-ce",
+  "index": "index.html",
+  "selectors": {
+    "h1": {
+      "requiretext": "Namespace: (.*)",
+      "type": "Namespace",
+      "regexp": "Namespace: ",
+      "replacement": ""
+    },
+    "h1.page-title": {
+      "requiretext": "Class: (.*)",
+      "type": "Class",
+      "regexp": "Class: ",
+      "replacement": ""
+    },
+    "header h2": {
+      "type": "Define"
+    },
+    ".container-overview dt h4": {
+      "type": "Constructor"
+    },
+    "dl dt h4[class!='name']": {
+      "requiretext": "(.+)\\:(.+)",
+      "type": "Property",
+      "regexp": "<(.*)>|:(.*)",
+      "replacement": ""
+    },
+    "dl dt h4[class='name']": {
+      "requiretext": "(.+)\\((.*)\\)",
+      "type": "Method",
+      "regexp": "<(.*)>",
+      "replacement": ""
+    }
+  },
+  "ignore": ["ABOUT"],
+  "icon32x32": "icon@2x.png",
+  "allowJS": false,
+  "ExternalURL": "https://phaserjs.github.io/phaser-ce/index.html"
+}
