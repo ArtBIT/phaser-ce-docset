@@ -23,7 +23,7 @@ clean:
 	@echo "Cleaning Phaser-CE.docset"
 	rm -rf Phaser-CE.docset
 
-compress: Phaser-CE.docset
+compress:
 	@echo "Compressing Phaser-CE.docset"
 	tar --exclude='.DS_Store' -cvzf Phaser-CE.tgz Phaser-CE.docset
 
