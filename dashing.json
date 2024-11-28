@@ -16,7 +16,9 @@
       "replacement": ""
     },
     "header h2": {
-      "type": "Define"
+      "type": "Define",
+      "regexp": "[ \\n]+",
+      "replacement": " "
     },
     ".container-overview dt h4": {
       "type": "Constructor"
