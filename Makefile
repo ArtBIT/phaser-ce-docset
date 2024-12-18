@@ -17,7 +17,7 @@ Phaser-CE.docset: Phaser-CE
 	@echo "Building Phaser-CE.docset"
 	cd Phaser-CE/docs && dashing build Phaser-CE
 	mv Phaser-CE/docs/Phaser-CE.docset .
-	cp resources/Phaser\ Logo/PNG/Phaser-Logo-Small.png Phaser-CE.docset/icon.png
+	cp Phaser-CE/docs/icon.png Phaser-CE.docset/icon.png
 
 clean:
 	@echo "Cleaning Phaser-CE.docset"

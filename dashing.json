@@ -15,11 +15,6 @@
       "regexp": "Class: ",
       "replacement": ""
     },
-    "header h2": {
-      "type": "Define",
-      "regexp": "[ \\n]+",
-      "replacement": " "
-    },
     ".container-overview dt h4": {
       "type": "Constructor"
     },
@@ -49,7 +44,7 @@
     }
   },
   "ignore": ["ABOUT"],
-  "icon32x32": "icon@2x.png",
+  "icon32x32": "icon.png",
   "allowJS": false,
   "ExternalURL": "https://phaserjs.github.io/phaser-ce/index.html"
 }
